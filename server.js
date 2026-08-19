@@ -54,9 +54,8 @@ app.post('/webhook', async (req, res) => {
             userId
           );
         }
-      }
-    }
-  }
+     }
+
 });
 
 // ฟังก์ชันส่งข้อความปกติ
