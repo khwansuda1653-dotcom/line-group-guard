@@ -50,7 +50,7 @@ app.post('/webhook', async (req, res) => {
           // แจ้งเตือนเมื่อพบคำหยาบ
           await sendReplyWithMention(
             replyToken, 
-            '⚠️ กรุณารักษามารยาทและงดใช้คำหยาบนะคะ @User[36m!', 
+            '⚠️ กรุณารักษามารยาทและงดใช้คำหยาบนะคะ @User!', 
             userId
           );
         }
