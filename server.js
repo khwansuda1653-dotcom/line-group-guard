@@ -52,7 +52,7 @@ async function sendReply(replyToken, text) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ${process.env.CHANNEL_ACCESS_TOKEN}'
+        'Authorization': `Bearer ${process.env.CHANNEL_ACCESS_TOKEN}'
   
     });
   } catch (error) {
