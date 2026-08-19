@@ -36,7 +36,7 @@ app.post('/webhook', async (req, res) => {
         // แจ้งเตือนเมื่อมีการส่งรูปภาพ
         await sendReplyWithMention(
           replyToken, 
-          '⚠️ กรุณา @User[36m งดส่งรูปภาพที่ไม่เหมาะสมหรือข้อมูลส่วนตัวเข้ามาในกลุ่มนะคะ!', 
+          '⚠️ กรุณา @User งดส่งรูปภาพที่ไม่เหมาะสมหรือข้อมูลส่วนตัวเข้ามาในกลุ่มนะคะ!', 
           userId
         );
       } else if (messageType === 'text') {
