@@ -52,7 +52,7 @@ async function sendReply(replyToken, text) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_CHANNEL_ACCESS_TOKEN'
+        'Authorization': 'iEvv15Bdq74/VqfuRkykWqhrugr9fgxOeIZ+9naCBYVSs3hDz34i0iyiuDxhfV+ls8SPWtmD4Mqso3bwtwW0B5IImKC4H/OYMB4gBP/j/plHJ7lHahfgtiooruIdq2Pi3RLI4n9r2VaFsuSnMOZs6gdB04t89/1O/w1cDnyilFU='
       }
     });
   } catch (error) {
