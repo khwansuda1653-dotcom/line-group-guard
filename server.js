@@ -80,7 +80,7 @@ async function sendReply(replyToken, text) {
 async function sendReplyWithMention(replyToken, text, userId) {
   try {
     // ปรับข้อความให้มีคำว่า @User ไว้แทนตำแหน่งที่จะแท็ก
-    const formattedText = text.replace('[36m@User[36m', '@member');
+    const formattedText = text.replace('@User', '@member');
     const mentionIndex = formattedText.indexOf('@member');
 
     await axios.post('https://api.line.me/v2/bot/message/reply', {
