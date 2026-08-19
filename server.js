@@ -12,7 +12,7 @@ app.post('/webhook', async (req, res) => {
     if (event.type === 'join') {
       const replyToken = event.replyToken;
       if (replyToken) {
-        await sendReply(replyToken, 'สวัสดีจ้า! บอทการ์ดพร้อมดูแลความเรียบร้อยในกลุ่มแล้วนะตะ 🛡️');
+        await sendReply(replyToken, 'สวัสดีจ้า! บอทการ์ดพร้อมดูแลความเรียบร้อยในกลุ่มแล้วนะค่ะ 🛡️');
       }
     }
 
@@ -52,7 +52,7 @@ async function sendReply(replyToken, text) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'iEvv15Bdq74/VqfuRkykWqhrugr9fgxOeIZ+9naCBYVSs3hDz34i0iyiuDxhfV+ls8SPWtmD4Mqso3bwtwW0B5IImKC4H/OYMB4gBP/j/plHJ7lHahfgtiooruIdq2Pi3RLI4n9r2VaFsuSnMOZs6gdB04t89/1O/w1cDnyilFU='
+        'Authorization': 'Bearer 1Evv15Bdq74/VqfuRkykWghrugr9fgx0eIZ+9naCBYVs3hDz34I0iyIuDxhfV+ls05FWtd4MQso3betwM0B5IiEKC4H/OYM84gBP/j/pIHJ7lHahfgtiooruldq2P3iRLi4n9r2VaFsUnW0Zs6gdB04t09/10/w1cDny1lFU='
       }
     });
   } catch (error) {
@@ -83,7 +83,7 @@ async function sendReplyWithMention(replyToken, text, userId) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_CHANNEL_ACCESS_TOKEN'
+        'Authorization': 'Bearer 1Evv15Bdq74/VqfuRkykWghrugr9fgx0eIZ+9naCBYVs3hDz34I0iyIuDxhfV+ls05FWtd4MQso3betwM0B5IiEKC4H/OYM84gBP/j/pIHJ7lHahfgtiooruldq2P3iRLi4n9r2VaFsUnW0Zs6gdB04t09/10/w1cDny1lFU='
       }
     });
   } catch (error) {
@@ -92,3 +92,5 @@ async function sendReplyWithMention(replyToken, text, userId) {
 }
 
 module.exports = app;
+
+
