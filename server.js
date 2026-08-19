@@ -54,8 +54,9 @@ app.post('/webhook', async (req, res) => {
             userId
           );
         }
-     }
-
+      }
+    }
+  }
 });
 
 // ฟังก์ชันส่งข้อความปกติ
@@ -110,3 +111,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
