@@ -43,18 +43,14 @@ app.post('/webhook', async (req, res) => {
         const text = event.message.text.toLowerCase();
         
         // รายการคำหยาบที่ต้องการตรวจจับ (สามารถเพิ่มคำอื่น ๆ ได้ตามต้องการ)
-        const badWords = ['คำหยาบ1', 'คำหยาบ2', 'มึง', 'กู', 'ควย']; 
-        const hasBadWord = badWords.some(word => text.includes(word));
+  
+      const hasBadWord = badWords.some(word => text.includes(word));
+
+if (hasBadWord) {
+  await sendReply(replyToken, '⚠️ กรุณารักษามารยาทและงดใช้คำหยาบในกลุ่มด้วยนะคะ!');
+}
         
-        if (hasBadWord) {
-          // แจ้งเตือนเมื่อพบคำหยาบ
-          await sendReplyWithMention(
-            replyToken, 
-            '⚠️ กรุณารักษามารยาทและงดใช้คำหยาบนะคะ @User!', 
-            userId
-          );
-        }
-      }
+
     }
   }
 });
