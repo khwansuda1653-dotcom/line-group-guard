@@ -52,8 +52,8 @@ async function sendReply(replyToken, text) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 1Evv15Bdq74/VqfuRkykWghrugr9fgx0eIZ+9naCBYVs3hDz34I0iyIuDxhfV+ls05FWtd4MQso3betwM0B5IiEKC4H/OYM84gBP/j/pIHJ7lHahfgtiooruldq2P3iRLi4n9r2VaFsUnW0Zs6gdB04t09/10/w1cDny1lFU='
-      }
+        'Authorization': 'Bearer ${process.env.CHANNEL_ACCESS_TOKEN}'
+  
     });
   } catch (error) {
     console.error('Error sending reply:', error.response?.data || error.message);
